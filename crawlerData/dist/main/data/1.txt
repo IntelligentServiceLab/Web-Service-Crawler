@@ -1,0 +1,10 @@
+数据爬取的网站：
+https://www.programmableweb.com/
+代码格式化网站：
+https://tool.oschina.net/codeformat/html
+正则匹配测试网站：
+https://tool.oschina.net/regex/
+辅助的翻译网站：
+https://www.deepl.com/translator
+ip测试网站：
+https://httpbin.org/ip

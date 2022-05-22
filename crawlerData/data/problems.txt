@@ -1,0 +1,57 @@
+遇到的问题汇总
+# 1.点击更多的时候如何爬取数据
+    在followers或者developers中数据太多，可能需要点击更多才能加载更多数据
+    解决：我发现，点击更多时，其实时把另外一页的数据通过某种方式加载进来，所有我们只需要获取点击更多按钮a标签中的url，然后获取数据即可
+# 2.爬虫数据过长，如何存储的问题
+    一开始使用的是xlwt来把数据存储到excel中，但是由于一些apisData中followers和developers数据过长，导致存储不了报错
+    解决：使用openpyxl来存储就不会存在这个问题
+# 3.如何把数据封装的问题
+    一开始我的想法是用一个字典存储所有的记录条数，然后再一起存到excel表格中，但是数据几万条，每条数据又存储很多字段，这样一次性存储虽然好像能减少io的次数，但是取回导致字典的变量数据量过大
+    解决：找到一条完整的记录就存储
+# 4.生成Excel表格然后把Excel数据导入到MySQL数据库中
+# 5.爬取过程中网络总是中断
+    爬取过程中，网络中断，然后获取不到url对应的html，导致报错
+    解决：我增加了重发的机制，可以进行多次的重发，这样即使网络不稳定，也不会让程序报错停下来
+# 6.有些网页不按规矩来导致拼接的URL会出现错误
+    例子：https://www.programmableweb.com/api/cdnjs/followers
+    上面只是一个正常的例子，不正常的我不记得是哪一个位置啦，我本来找followers看到是这种形式，我就没有取找网页中followers对应的link，而是自己拼接
+    baseUrl + "/api/" + apiName(经过处理) + "/followers"，这样拼接，就可以节约找到followers对应link的时间，反正找到大多数也是一样的，但是后来在运行过程中，
+    发现一些特例，不符合这种形式的拼接，所有没办法，只能先找到followers中的link再进行拼接
+# 7.selector取值的问题
+    这个取值有时候会取第几个子节点，比如第六个子节点对应的是developers的标签，但是有些数据他前面可能不存在developers，然后找到的第六个是followers，使用css标签选择器的时候得注意
+# 8.链接中有个&，导致爬取的链接会出现amp
+    爬取一些特殊的字符，如&，爬取之后会得到&amp;可能是编码的问题，所以需要把amp;替换掉,也有的字符串里面本来就有amp;
+    爬取之后就得到amp;amp;导致多了一个amp;所以需要使用replace(被替换字符，替换成什么字符，替换几次)函数替换掉
+    这个网站有段时间请求不到url，我以为是有反爬，但是后面发现是找到的url有问题，不能进行访问，具体可参考第11个问题
+# 9.Java反爬处理，添加代理IP
+    添加反向代理也是可以，我有代码的实现，但是每条调用使用代理的方法，如果需要使用代理，可以把注释的代理打开即可，同时免费的代理确实不好用，使用谨慎，最好自己买一个
+# 10.爬虫程序停止又得重新开始爬取(已解决)，用一个文件保存状态值
+    每次运行程序都需要从第一个数据开始爬取，这样要是程序中间出现一个问题导致中断，又得重新爬取，
+    解决：我添加了几个xxxPositionInfo.txt文件，记录文件爬取的位置，下一次重新运行程序会从记录的位置开始爬取，不用从头开始
+# 11.爬取到某些超链接直接不让访问
+    https://www.programmableweb.com/category/all/apis?page=38
+    这一页中的Copy.com API(https://www.programmableweb.com/api/copy.com)接口，可能是网站的问题，拿到完整的url，不能进行访问
+    https://www.programmableweb.com/category/all/apis?page=711
+    https://www.programmableweb.com/api/galleriaio
+    解决：直接舍弃这种类型的url，进行下一次循环，一开始判断返回是否为空，为空就跳过，但是后面我解决问题13的时候，发现可以连带把这个问题也顺便解决，所以就舍弃一开始的解决策略
+
+# 12.文件如何打包发布
+    参考博客：https://blog.csdn.net/qq_45664055/article/details/115659882?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164637383816780271985188%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=164637383816780271985188&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-115659882.pc_search_result_control_group&utm_term=%E5%A6%82%E4%BD%95%E6%8A%8Apython3%E5%A4%9A%E4%B8%AA.py%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85&spm=1018.2226.3001.4187
+
+# 13.有个api重定向回第一页
+    352页的directory-open-access-journals对应的url不是去往具体的表单数据界面，而是跳转到了第一页
+https://www.programmableweb.com/category/all/apis?page=352
+        https://www.programmableweb.com/api/directory-open-access-journals
+   解决：对于这种有问题的api，进行异常处理，把它舍弃掉，进行下一次循环
+
+# 14.有时候把程序停掉，然后表格数据会覆盖，之前的数据都没啦
+    ！！！暂不清楚是什么原因引起的
+    猜测：可能是数据在写入过程中，中断程序，然后导致的一些错误
+# 15.如何把位置信息放在同一个配置文件中
+后续需做：优化代码：
+           1.正则表达式的匹配规则还需要优化，待匹配的字符串看看能否更短
+           2.加入多线程(没必要)
+
+# 16:保存数据到excel表格，打开excel查看会出现卡顿，
+     解决：把数据保存到csv
+

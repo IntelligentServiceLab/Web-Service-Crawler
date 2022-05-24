@@ -5,7 +5,7 @@
 
 ### 版本配置
 | Package | Version | 
-| :-----| ----: | 
+| :-----| :----- | 
 | python | 3.10.2 | 
 |beautifulsoup4| 4.10.0|
 |configparser| 5.2.0|

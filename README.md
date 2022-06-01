@@ -39,8 +39,15 @@
 ![image](https://user-images.githubusercontent.com/68261447/171334196-66f8a8a3-d9d7-4995-8846-2ea8facd5e96.png)
 - Step 3：通过端口号即可访问数据
   示例：![image](https://user-images.githubusercontent.com/68261447/171336246-a0456111-51a5-4dab-9c2f-93ef01582fd4.png)
+  ##在这个项目调用爬虫程序说明，我是通过执行脚本文件来执行的，脚本文件在resource/bat/run.bat
+  ![image](https://user-images.githubusercontent.com/68261447/171336438-fa25c2a6-13ff-49d7-92ed-53fd890d34f1.png)
+  ![image](https://user-images.githubusercontent.com/68261447/171336514-3ad39aac-9ebd-406b-910f-78d5cb6daac3.png)
+  ##需要修改一些路径
+  ![image](https://user-images.githubusercontent.com/68261447/171336690-63a6ed24-7802-455c-9366-5664a93cc685.png)
+  ![image](https://user-images.githubusercontent.com/68261447/171336807-efe5d608-7604-4bfa-9ede-4a148196d031.png)
 
-  
+
+
 
 ### 子系统3使用说明
 - Step 1：

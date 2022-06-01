@@ -20,11 +20,19 @@
 
 ## 系统使用说明
 ### 子系统crawlerData使用说明
-- 需要的环境：IDEA+MySQL+Redis
 - Step 1：使用Pyinstaller把程序打包成了.exe可执行文件
 - Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
 - ![image](https://user-images.githubusercontent.com/68261447/171332747-37362856-4590-407a-8642-13074d322d9e.png)
 
+### 子系统srb-abmin使用说明
+##需要安装的软件：Node+WebStorm
+Node的版本：![image](https://user-images.githubusercontent.com/68261447/171337406-1a096250-4ba8-4c4b-bc1e-878504d122de.png)
+需要自定义的地方：
+![image](https://user-images.githubusercontent.com/68261447/171337805-ca6e31eb-25ac-453b-bc99-b29a922a06c1.png)
+- Step 1：在终端界面数据npm install(需要提前安装Node)
+- Step 2：安装完成之后会出现node_modules
+![image](https://user-images.githubusercontent.com/68261447/171338401-8214a416-3b43-48de-9afd-20d224a64c35.png)
+- Step 3：输入npm run dev运行项目，这个项目运行之后只有界面，可能不存在数据，如果需要数据的话需要把下面crawler-system也运行起来
 
 ### 子系统crawler-system使用说明
   ##需要安装的软件：IDEA+MySQL+Redis+SQLyog（这个使用Navicat也行，这只是一个数据库的可视化工具）
@@ -47,9 +55,3 @@
   ![image](https://user-images.githubusercontent.com/68261447/171336807-efe5d608-7604-4bfa-9ede-4a148196d031.png)
 
 
-
-
-### 子系统3使用说明
-- Step 1：
-- Step 2：
-- Step 3：

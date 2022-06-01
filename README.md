@@ -26,10 +26,20 @@
 - ![image](https://user-images.githubusercontent.com/68261447/171332747-37362856-4590-407a-8642-13074d322d9e.png)
 
 
-### 子系统2使用说明
-- Step 1：
-- Step 2：
-- Step 3：
+### 子系统crawler-system使用说明
+  ##需要安装的软件：IDEA+MySQL+Redis+SQLyog（这个使用Navicat也行，这只是一个数据库的可视化工具）
+  ##数据库文件也在工具目录tool之内，自己导入这个文件.sql后缀的文件即可
+  ##application.yml配置说明
+  ![image](https://user-images.githubusercontent.com/68261447/171333984-d9537e77-eec2-46ad-bc13-85969324e45f.png)
+![image](https://user-images.githubusercontent.com/68261447/171334158-6482d95c-ddd6-428d-ab55-989db6b69888.png)
+- Step 1：打开Redis
+  在Redis的安装目录下，有一个redis-server.exe的文件，点击就可以打开Redis
+![image](https://user-images.githubusercontent.com/68261447/171334268-0b7e05d6-01a8-49c4-b6d8-2056634f4faf.png)
+- Step 2：在IDEA中打开crawler-system项目，然后点击运行
+![image](https://user-images.githubusercontent.com/68261447/171334196-66f8a8a3-d9d7-4995-8846-2ea8facd5e96.png)
+- Step 3：通过端口号即可访问数据
+  示例：
+  
 
 ### 子系统3使用说明
 - Step 1：

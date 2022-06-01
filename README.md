@@ -19,10 +19,9 @@
 |urllib3|1.26.8|
 
 ## 系统使用说明
-### 子系统1使用说明
-- Step 1：
-- Step 2：
-- Step 3：
+### 子系统crawlerData使用说明
+- Step 1：使用Pyinstaller把程序打包成了.exe可执行文件
+- Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
 
 ### 子系统2使用说明
 - Step 1：

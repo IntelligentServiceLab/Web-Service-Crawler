@@ -31,14 +31,15 @@
   ##数据库文件也在工具目录tool之内，自己导入这个文件.sql后缀的文件即可
   ##application.yml配置说明
   ![image](https://user-images.githubusercontent.com/68261447/171333984-d9537e77-eec2-46ad-bc13-85969324e45f.png)
-![image](https://user-images.githubusercontent.com/68261447/171334158-6482d95c-ddd6-428d-ab55-989db6b69888.png)
+  ![image](https://user-images.githubusercontent.com/68261447/171334158-6482d95c-ddd6-428d-ab55-989db6b69888.png)
 - Step 1：打开Redis
   在Redis的安装目录下，有一个redis-server.exe的文件，点击就可以打开Redis
 ![image](https://user-images.githubusercontent.com/68261447/171334268-0b7e05d6-01a8-49c4-b6d8-2056634f4faf.png)
 - Step 2：在IDEA中打开crawler-system项目，然后点击运行
 ![image](https://user-images.githubusercontent.com/68261447/171334196-66f8a8a3-d9d7-4995-8846-2ea8facd5e96.png)
 - Step 3：通过端口号即可访问数据
-  示例：
+  示例：![image](https://user-images.githubusercontent.com/68261447/171336246-a0456111-51a5-4dab-9c2f-93ef01582fd4.png)
+
   
 
 ### 子系统3使用说明

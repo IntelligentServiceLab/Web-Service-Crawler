@@ -20,8 +20,11 @@
 
 ## 系统使用说明
 ### 子系统crawlerData使用说明
+- 需要的环境：IDEA+MySQL+Redis
 - Step 1：使用Pyinstaller把程序打包成了.exe可执行文件
 - Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
+- ![image](https://user-images.githubusercontent.com/68261447/171332747-37362856-4590-407a-8642-13074d322d9e.png)
+
 
 ### 子系统2使用说明
 - Step 1：

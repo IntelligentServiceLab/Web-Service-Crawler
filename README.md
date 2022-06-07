@@ -24,10 +24,9 @@
 ## 系统使用说明
 ### 1. 子系统crawlerData使用说明
 - Step 1：使用Pyinstaller把程序打包成了.exe可执行文件
-- ![image](https://user-images.githubusercontent.com/68261447/172368738-a689cdc0-fce7-455a-9df0-fe2f749b48eb.png)
+- ![image](https://user-images.githubusercontent.com/68261447/172369104-2d2526a9-ca74-464f-ba0e-5a5383ccd3c7.png)
 - Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
-- ![image](https://user-images.githubusercontent.com/68261447/172368808-b06a16e6-50a7-412b-975f-746bd9d89d5a.png)
--
+- ![Uploading image.png…]()
 ### 2. 子系统srb-abmin使用说明
 ##需要安装的软件：Node+WebStorm
 - Node的版本：

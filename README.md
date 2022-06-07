@@ -2,9 +2,9 @@
 > 刘羽鑫. 基于ProgrammableWeb的Web服务爬虫系统. 湖南科技大学本科毕业论文. 2022. [PDF](2022_本科毕业论文_刘羽鑫.pdf), [Slides](2022_答辩PPT_刘羽鑫.pdf)
 
 ## Web爬虫系统分为三个子系统
-- **crawlerData**：用Python代码写的爬虫程序，爬取的网站地址为: <https://www.programmableweb.com/>
-- **srb-abmin**：Vue框架搭建的前端项目
-- **crawler-system**：SpringBoot框架搭建的后端项目，前后端项目需要配合一起使用才能够达到展示数据的效果
+1. **crawlerData**：用Python代码写的爬虫程序，爬取的网站地址为: <https://www.programmableweb.com/>
+2. **srb-abmin**：Vue框架搭建的前端项目
+3. **crawler-system**：SpringBoot框架搭建的后端项目，前后端项目需要配合一起使用才能够达到展示数据的效果
 
 ## 版本配置
 | Package | Version | 
@@ -22,12 +22,12 @@
 |urllib3|1.26.8|
 
 ## 系统使用说明
-### 子系统crawlerData使用说明
+### 1. 子系统crawlerData使用说明
 - Step 1：使用Pyinstaller把程序打包成了.exe可执行文件
 - Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
 - ![image](https://user-images.githubusercontent.com/68261447/171332747-37362856-4590-407a-8642-13074d322d9e.png)
 
-### 子系统srb-abmin使用说明
+### 2. 子系统srb-abmin使用说明
 ##需要安装的软件：Node+WebStorm
 Node的版本：![image](https://user-images.githubusercontent.com/68261447/171337406-1a096250-4ba8-4c4b-bc1e-878504d122de.png)
 需要自定义的地方：
@@ -37,7 +37,7 @@ Node的版本：![image](https://user-images.githubusercontent.com/68261447/1713
 ![image](https://user-images.githubusercontent.com/68261447/171338401-8214a416-3b43-48de-9afd-20d224a64c35.png)
 - Step 3：输入npm run dev运行项目，这个项目运行之后只有界面，可能不存在数据，如果需要数据的话需要把下面crawler-system也运行起来
 
-### 子系统crawler-system使用说明
+### 3. 子系统crawler-system使用说明
   ##需要安装的软件：IDEA+MySQL+Redis+SQLyog（这个使用Navicat也行，这只是一个数据库的可视化工具）
   ##数据库文件也在工具目录tool之内，自己导入这个文件.sql后缀的文件即可
   ##application.yml配置说明

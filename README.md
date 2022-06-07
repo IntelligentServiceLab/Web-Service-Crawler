@@ -30,8 +30,8 @@
 ### 2. 子系统srb-abmin使用说明
 ##需要安装的软件：Node+WebStorm
 - Node的版本：
-- ![image](https://user-images.githubusercontent.com/68261447/171337406-1a096250-4ba8-4c4b-bc1e-878504d122de.png)
-需要自定义的地方：
+![image](https://user-images.githubusercontent.com/68261447/171337406-1a096250-4ba8-4c4b-bc1e-878504d122de.png)
+- 需要自定义的地方：
 ![image](https://user-images.githubusercontent.com/68261447/171337805-ca6e31eb-25ac-453b-bc99-b29a922a06c1.png)
 - Step 1：在终端界面数据npm install(需要提前安装Node)
 - Step 2：安装完成之后会出现node_modules

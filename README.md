@@ -28,7 +28,7 @@
 - Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
  ![image](https://user-images.githubusercontent.com/68261447/172370369-b27f4105-45b3-4ccb-856d-f63f411b8167.png)
 ### 2. 子系统srb-abmin使用说明
-##需要安装的软件：Node+WebStorm
+ 需要安装的软件：Node+WebStorm  
 - Node的版本：
 ![image](https://user-images.githubusercontent.com/68261447/171337406-1a096250-4ba8-4c4b-bc1e-878504d122de.png)
 - 需要自定义的地方：

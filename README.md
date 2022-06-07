@@ -39,9 +39,9 @@
 - Step 3：输入npm run dev运行项目，这个项目运行之后只有界面，可能不存在数据，如果需要数据的话需要把下面crawler-system也运行起来
 
 ### 3. 子系统crawler-system使用说明
- ###需要安装的软件：IDEA+MySQL+Redis+SQLyog（这个使用Navicat也行，这只是一个数据库的可视化工具）
- 数据库文件也在工具目录tool之内，自己导入这个文件.sql后缀的文件即可<br>
- application.yml配置说明:<br>
+ ###需要安装的软件：IDEA+MySQL+Redis+SQLyog（这个使用Navicat也行，这只是一个数据库的可视化工具）  
+ 数据库文件也在工具目录tool之内，自己导入这个文件.sql后缀的文件即可  
+ application.yml配置说明:  
   ![image](https://user-images.githubusercontent.com/68261447/171333984-d9537e77-eec2-46ad-bc13-85969324e45f.png)
   ![image](https://user-images.githubusercontent.com/68261447/171334158-6482d95c-ddd6-428d-ab55-989db6b69888.png)
 - Step 1：打开Redis

@@ -1,3 +1,6 @@
+本仓库来源于2022届本科毕业设计:
+> 刘羽鑫. 基于ProgrammableWeb的Web服务爬虫系统. 湖南科技大学本科毕业论文. 2022.
+
 ## Web爬虫系统分为三个子系统
 - **crawlerData**：用Python代码写的爬虫程序，爬取的网站地址为: <https://www.programmableweb.com/>
 - **srb-abmin**：Vue框架搭建的前端项目

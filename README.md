@@ -9,10 +9,10 @@
   - [子系统srb-abmin使用说明](#2. 子系统srb-abmin使用说明)
   - [子系统crawler-system使用说明](#3. 子系统crawler-system使用说明)
 - [数据集字段描述](#数据集字段描述)
-  - [API 数据集](#API 数据集)
-  - [Mashup 数据集](#Mashup 数据集)
-  - [SampleSourceCode 数据集](#SampleSourceCode 数据集)
-  - [SDK 数据集](#SDK 数据集)
+  - [API 数据集](#API数据集)
+  - [Mashup 数据集](#Mashup数据集)
+  - [SampleSourceCode 数据集](#SampleSourceCode数据集)
+  - [SDK 数据集](#SDK数据集)
  
 ## <span id=" ">系统组成</span>
 **Web爬虫系统分为三个子系统**
@@ -76,7 +76,7 @@
   ![image](https://user-images.githubusercontent.com/68261447/171336807-efe5d608-7604-4bfa-9ede-4a148196d031.png)
 
 ## <span id=" ">数据集字段描述</span>
-### <span id=" ">API 数据集</span>
+### <span id=" ">API数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | api_name | API名称 |
@@ -90,7 +90,7 @@
 | followers_name | 对应的关注者名称 |
 | versions | API版本 |
 
-### <span id=" ">Mashup 数据集</span>
+### <span id=" ">Mashup数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | mashups_name | Mashup名称 |
@@ -103,7 +103,7 @@
 | followers_names | 对应的关注者名称 |
 | submitted_date | Mashup创建日期 |
 
-### <span id=" ">SampleSourceCode 数据集</span>
+### <span id=" ">SampleSourceCode数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | Name of Sample Source Code | Sample Source Code名称 |
@@ -117,7 +117,7 @@
 | Followers | 对应的关注者名称 |
 | Versions | 版本 |
 
-### <span id=" ">SDK 数据集</span>
+### <span id=" ">SDK数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | SDK Name | SDK名称 |

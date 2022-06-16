@@ -2,7 +2,8 @@
 > 刘羽鑫. 基于ProgrammableWeb的Web服务爬虫系统. 湖南科技大学本科毕业论文. 2022. [PDF](2022_本科毕业论文_刘羽鑫.pdf), [Slides](2022_答辩PPT_刘羽鑫.pdf)  
 > Email: 1376493805@qq.com
 
-## Web爬虫系统分为三个子系统
+## 系统组成
+**Web爬虫系统分为三个子系统**
 1. **crawlerData**：用Python代码写的爬虫程序，爬取的网站地址为: <https://www.programmableweb.com/>
 2. **srb-abmin**：Vue框架搭建的前端项目
 3. **crawler-system**：SpringBoot框架搭建的后端项目，前后端项目需要配合一起使用才能够达到展示数据的效果

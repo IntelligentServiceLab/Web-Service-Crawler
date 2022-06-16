@@ -21,6 +21,7 @@
 |python-dateutil|2.8.2|
 |requests|2.27.1|
 |urllib3|1.26.8|
+**注**：以上Python包不一定均有使用,若有使用,版本则按上表所示.
 
 ## 系统使用说明
 ### 1. 子系统crawlerData使用说明

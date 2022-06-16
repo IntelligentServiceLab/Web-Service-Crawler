@@ -58,5 +58,59 @@
   需要修改一些路径  
   ![image](https://user-images.githubusercontent.com/68261447/171336690-63a6ed24-7802-455c-9366-5664a93cc685.png)
   ![image](https://user-images.githubusercontent.com/68261447/171336807-efe5d608-7604-4bfa-9ede-4a148196d031.png)
+## 数据集字段描述
+### API 数据集
+|  字段名 | 描述 |
+|  :----  | :----  |
+| api_name | API名称 |
+| description | API文本描述 |
+| categories | API类别 |
+| submitted_date | API创建日期 |
+| developers_numbers | 开发者数量 |
+| developers_name | 对应的开发者名称 |
+| developers_m_r | API参与开发的Mashup / Resource |
+| followers_numbers | 关注者数量 |
+| followers_name | 对应的关注者名称 |
+| versions | API版本 |
+
+### Mashup 数据集
+|  字段名 | 描述 |
+|  :----  | :----  |
+| mashups_name | Mashup名称 |
+| related_apis | 相关联的API名称 |
+| description | Mashup文本描述 |
+| categories | Mashup的类别 |
+| mashup_app_type | Mashup的类型 |
+| company | 开发公司名称 |
+| followers_numbers | 关注者数量 |
+| followers_names | 对应的关注者名称 |
+| submitted_date | Mashup创建日期 |
+
+### SampleSourceCode 数据集
+|  字段名 | 描述 |
+|  :----  | :----  |
+| Name of Sample Source Code | Sample Source Code名称 |
+| Description | Sample Source Code文本描述 |
+| Related APIs | Sample Source Code对应的API |
+| Related Platform / Languages | 使用的平台或编程语言 |
+| Categories | Sample Source Code的类别 |
+| Added Date | Sample Source Code发布日期 |
+| Sample Source Code Provider | Sample Source Code提供商 |
+| Followers Number | 关注者数量 |
+| Followers | 对应的关注者名称 |
+| Versions | 版本 |
+
+### SDK 数据集
+|  字段名 | 描述 |
+|  :----  | :----  |
+| SDK Name | SDK名称 |
+| Description | SDK文本描述 |
+| Related APIs | SDK对应的API |
+| Related Platform / Languages | 使用的平台或编程语言 |
+| Categories | SDK的类别 |
+| Added Date | SDK发布日期 |
+| SDK Provider | SDK提供商 |
+| Followers Number | 关注者数量 |
+| Followers | 对应的关注者名称 |
 
 

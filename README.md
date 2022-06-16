@@ -5,6 +5,9 @@
 - [系统组成](#系统组成)
 - [版本配置](#版本配置)
 - [系统使用说明](#系统使用说明)
+  - [子系统crawlerData使用说明](#1. 子系统crawlerData使用说明)
+  - [子系统srb-abmin使用说明](#2. 子系统srb-abmin使用说明)
+  - [子系统crawler-system使用说明](#3. 子系统crawler-system使用说明)
 - [数据集字段描述](#数据集字段描述)
   - [API 数据集](#API 数据集)
   - [Mashup 数据集](#Mashup 数据集)
@@ -35,12 +38,13 @@
 **注**：以上Python包不一定均有使用,若有使用,版本则按上表所示.
 
 ## <span id=" ">系统使用说明</span>
-### 1. 子系统crawlerData使用说明
+### <span id=" ">1. 子系统crawlerData使用说明</span>
 - Step 1：使用Pyinstaller把程序打包成了.exe可执行文件
  ![image](https://user-images.githubusercontent.com/68261447/172369104-2d2526a9-ca74-464f-ba0e-5a5383ccd3c7.png)
 - Step 2：点击crawlerData/dist/main/main.exe运行程序，得到的数据保存在crawlerData/dist/main/data目录下
  ![image](https://user-images.githubusercontent.com/68261447/172370369-b27f4105-45b3-4ccb-856d-f63f411b8167.png)
-### 2. 子系统srb-abmin使用说明
+
+### <span id=" ">2. 子系统srb-abmin使用说明</span>
  需要安装的软件：Node+WebStorm  
 - Node的版本：
 ![image](https://user-images.githubusercontent.com/68261447/171337406-1a096250-4ba8-4c4b-bc1e-878504d122de.png)
@@ -51,7 +55,7 @@
 ![image](https://user-images.githubusercontent.com/68261447/171338401-8214a416-3b43-48de-9afd-20d224a64c35.png)
 - Step 3：输入npm run dev运行项目，这个项目运行之后只有界面，可能不存在数据，如果需要数据的话需要把下面crawler-system也运行起来
 
-### 3. 子系统crawler-system使用说明
+### <span id=" ">3. 子系统crawler-system使用说明</span>
  需要安装的软件：IDEA+MySQL+Redis+SQLyog（这个使用Navicat也行，这只是一个数据库的可视化工具）    
  数据库文件也在工具目录tool之内，自己在MySQL数据库导入tool文件夹中.sql后缀的文件即可（可以借助SQLyog等MySQL可视化工具导入更加便捷）  
  application.yml配置说明:  
@@ -72,7 +76,7 @@
   ![image](https://user-images.githubusercontent.com/68261447/171336807-efe5d608-7604-4bfa-9ede-4a148196d031.png)
 
 ## <span id=" ">数据集字段描述</span>
-### API 数据集
+### <span id=" ">API 数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | api_name | API名称 |
@@ -86,7 +90,7 @@
 | followers_name | 对应的关注者名称 |
 | versions | API版本 |
 
-### Mashup 数据集
+### <span id=" ">Mashup 数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | mashups_name | Mashup名称 |
@@ -99,7 +103,7 @@
 | followers_names | 对应的关注者名称 |
 | submitted_date | Mashup创建日期 |
 
-### SampleSourceCode 数据集
+### <span id=" ">SampleSourceCode 数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | Name of Sample Source Code | Sample Source Code名称 |
@@ -113,7 +117,7 @@
 | Followers | 对应的关注者名称 |
 | Versions | 版本 |
 
-### SDK 数据集
+### <span id=" ">SDK 数据集</span>
 |  字段名 | 描述 |
 |  :----  | :----  |
 | SDK Name | SDK名称 |
